@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9258A5129A91B3700DAE626 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9258A5029A91B3700DAE626 /* InfoPanelView.swift */; };
+		C9258A5329A9219A00DAE626 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9258A5229A9219A00DAE626 /* ControlImageView.swift */; };
+		C9258A5529A954BF00DAE626 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9258A5429A954BF00DAE626 /* PageModel.swift */; };
+		C9258A5729A954DC00DAE626 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9258A5629A954DC00DAE626 /* PageData.swift */; };
 		C9967AFC29A8792F008D5C7A /* PinchApp_Gestures_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9967AFB29A8792F008D5C7A /* PinchApp_Gestures_App.swift */; };
 		C9967AFE29A8792F008D5C7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9967AFD29A8792F008D5C7A /* ContentView.swift */; };
 		C9967B0029A87930008D5C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9967AFF29A87930008D5C7A /* Assets.xcassets */; };
@@ -14,11 +18,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9258A5029A91B3700DAE626 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		C9258A5229A9219A00DAE626 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		C9258A5429A954BF00DAE626 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		C9258A5629A954DC00DAE626 /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		C9967AF829A8792F008D5C7A /* PinchApp(Gestures).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PinchApp(Gestures).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9967AFB29A8792F008D5C7A /* PinchApp_Gestures_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp_Gestures_App.swift; sourceTree = "<group>"; };
 		C9967AFD29A8792F008D5C7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9967AFF29A87930008D5C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9967B0229A87930008D5C7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9967B0D29A87B07008D5C7A /* PinchApp-Gestures--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PinchApp-Gestures--Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,12 @@
 		C9967AFA29A8792F008D5C7A /* PinchApp(Gestures) */ = {
 			isa = PBXGroup;
 			children = (
+				C9967B0D29A87B07008D5C7A /* PinchApp-Gestures--Info.plist */,
 				C9967AFB29A8792F008D5C7A /* PinchApp_Gestures_App.swift */,
-				C9967AFD29A8792F008D5C7A /* ContentView.swift */,
+				C9967B0C29A87ABC008D5C7A /* Data */,
+				C9967B0B29A87AB3008D5C7A /* Model */,
+				C9967B0A29A87A9D008D5C7A /* Views */,
+				C9967B0929A87A8D008D5C7A /* Screens */,
 				C9967AFF29A87930008D5C7A /* Assets.xcassets */,
 				C9967B0129A87930008D5C7A /* Preview Content */,
 			);
@@ -65,6 +78,39 @@
 				C9967B0229A87930008D5C7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9967B0929A87A8D008D5C7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C9967AFD29A8792F008D5C7A /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C9967B0A29A87A9D008D5C7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9258A5029A91B3700DAE626 /* InfoPanelView.swift */,
+				C9258A5229A9219A00DAE626 /* ControlImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9967B0B29A87AB3008D5C7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9258A5429A954BF00DAE626 /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9967B0C29A87ABC008D5C7A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C9258A5629A954DC00DAE626 /* PageData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9258A5329A9219A00DAE626 /* ControlImageView.swift in Sources */,
+				C9258A5529A954BF00DAE626 /* PageModel.swift in Sources */,
 				C9967AFE29A8792F008D5C7A /* ContentView.swift in Sources */,
 				C9967AFC29A8792F008D5C7A /* PinchApp_Gestures_App.swift in Sources */,
+				C9258A5729A954DC00DAE626 /* PageData.swift in Sources */,
+				C9258A5129A91B3700DAE626 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +320,13 @@
 				DEVELOPMENT_TEAM = 4AKWAHU929;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "PinchApp-Gestures--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Pinch;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +351,13 @@
 				DEVELOPMENT_TEAM = 4AKWAHU929;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "PinchApp-Gestures--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Pinch;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
